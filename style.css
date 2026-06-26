@@ -1,0 +1,357 @@
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* =========================
+   MENU
+========================= */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#2e7d32;
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+}
+
+.menu li{
+    margin-left:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#ffe082;
+}
+
+#menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner{
+    height:100vh;
+    background:url("img/banner.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.banner-texto{
+    background:rgba(0,0,0,.55);
+    padding:40px;
+    border-radius:12px;
+}
+
+.banner h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.banner p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#43a047;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#2e7d32;
+    transform:scale(1.05);
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2e7d32;
+    font-size:36px;
+}
+
+.introducao{
+    background:white;
+    text-align:center;
+}
+
+.introducao p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+}
+
+.verde{
+    background:#e8f5e9;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:50px;
+    color:#43a047;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* =========================
+   GRÁFICO
+========================= */
+
+.grafico{
+    background:white;
+    text-align:center;
+}
+
+canvas{
+    max-width:900px;
+    width:100%;
+}
+
+/* =========================
+   VÍDEO
+========================= */
+
+.video{
+    background:#e8f5e9;
+    text-align:center;
+}
+
+.video iframe{
+    width:90%;
+    max-width:800px;
+    border-radius:10px;
+}
+
+/* =========================
+   CALCULADORA
+========================= */
+
+.calculadora{
+    background:white;
+    text-align:center;
+}
+
+.calculadora input{
+    padding:12px;
+    width:220px;
+    margin:15px;
+    border:1px solid #999;
+    border-radius:5px;
+}
+
+.calculadora button{
+    padding:12px 30px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.calculadora button:hover{
+    background:#1b5e20;
+}
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz{
+    background:#e8f5e9;
+    text-align:center;
+}
+
+.quiz button{
+    margin:10px;
+    padding:12px 30px;
+    border:none;
+    border-radius:5px;
+    background:#43a047;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.quiz button:hover{
+    background:#2e7d32;
+}
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato{
+    background:white;
+}
+
+.contato form{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+.contato input,
+.contato textarea{
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #bbb;
+    border-radius:5px;
+}
+
+.contato textarea{
+    height:160px;
+    resize:none;
+}
+
+.contato button{
+    padding:15px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.contato button:hover{
+    background:#1b5e20;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:768px){
+
+    .banner h1{
+        font-size:40px;
+    }
+
+    .banner p{
+        font-size:18px;
+    }
+
+    #menu-btn{
+        display:block;
+    }
+
+    .menu{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#2e7d32;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .menu.active{
+        display:flex;
+    }
+
+    .menu li{
+        margin:15px 0;
+    }
+}
