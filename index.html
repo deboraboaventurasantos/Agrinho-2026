@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+    <nav class="navbar">
+        <h2 class="logo">AgroFuture</h2>
+
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#producao">Produção</a></li>
+            <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+            <li><a href="#desafios">Desafios</a></li>
+            <li><a href="#futuro">Futuro</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <button id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </nav>
+
+</header>
+
+<!-- Banner -->
+
+<section class="banner" id="inicio">
+
+    <div class="banner-texto">
+
+        <h1>Agricultura Sustentável</h1>
+
+        <p>
+            Produzir mais, preservar o planeta e garantir alimento para as futuras gerações.
+        </p>
+
+        <a href="#producao" class="btn">
+            Saiba Mais
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Introdução -->
+
+<section class="introducao">
+
+    <h2>Introdução</h2>
+
+    <p>
+
+        A agricultura moderna evolui constantemente com o auxílio da tecnologia,
+        permitindo maior produtividade sem deixar de lado a preservação ambiental.
+        O equilíbrio entre produção e sustentabilidade é essencial para garantir
+        segurança alimentar e qualidade de vida.
+
+    </p>
+
+</section>
+
+<!-- Produção -->
+
+<section id="producao" class="conteudo">
+
+    <h2>Produção Agrícola</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <i class="fas fa-chart-line"></i>
+
+            <h3>Crescimento</h3>
+
+            <p>
+                A produção agrícola cresce com técnicas modernas e uso de tecnologia.
+            </p>
+
+        </div>
+
+        <div class="card">
+            <i class="fas fa-seedling"></i>
+
+            <h3>Importância Econômica</h3>
+
+            <p>
+                O agronegócio movimenta bilhões e gera milhões de empregos.
+            </p>
+
+        </div>
+
+        <div class="card">
+            <i class="fas fa-robot"></i>
+
+            <h3>Tecnologias</h3>
+
+            <p>
+                Drones, GPS, sensores e inteligência artificial aumentam a eficiência.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Sustentabilidade -->
+
+<section id="sustentabilidade" class="conteudo verde">
+
+    <h2>Sustentabilidade</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fas fa-leaf"></i>
+
+            <h3>Práticas Ecológicas</h3>
+
+            <p>
+                Rotação de culturas, reflorestamento e redução do desperdício.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-mountain"></i>
+
+            <h3>Conservação do Solo</h3>
+
+            <p>
+                Plantio direto e cobertura vegetal reduzem a erosão.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-solar-panel"></i>
+
+            <h3>Energias Limpas</h3>
+
+            <p>
+                Energia solar e biodigestores reduzem impactos ambientais.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Desafios -->
+
+<section id="desafios" class="conteudo">
+
+    <h2>Desafios Ambientais</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fas fa-temperature-high"></i>
+
+            <h3>Problemas</h3>
+
+            <p>
+                Mudanças climáticas, queimadas e desperdício de água.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-exclamation-triangle"></i>
+
+            <h3>Consequências</h3>
+
+            <p>
+                Redução da biodiversidade, erosão e perda de produtividade.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Futuro -->
+
+<section id="futuro" class="conteudo verde">
+
+    <h2>Soluções e Futuro</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fas fa-lightbulb"></i>
+
+            <h3>Inovações</h3>
+
+            <p>
+                Agricultura de precisão, sensores inteligentes e IA.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-tree"></i>
+
+            <h3>Agricultura Regenerativa</h3>
+
+            <p>
+                Recuperação do solo e preservação dos recursos naturais.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-microchip"></i>
+
+            <h3>Tecnologia</h3>
+
+            <p>
+                Máquinas autônomas e monitoramento em tempo real.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Gráfico -->
+
+<section class="grafico">
+
+<h2>Crescimento da Produção</h2>
+
+<canvas id="grafico" width="600" height="300"></canvas>
+
+</section>
+
+<!-- Vídeo -->
+
+<section class="video">
+
+<h2>Conheça a Agricultura Sustentável</h2>
+
+<iframe width="700"
+height="400"
+src="https://www.youtube.com/embed/7mL4Lz8R4lQ"
+title="Vídeo"
+allowfullscreen></iframe>
+
+</section>
+
+<!-- Calculadora -->
+
+<section class="calculadora">
+
+<h2>Calculadora de Impacto Ambiental</h2>
+
+<p>Digite a quantidade de árvores plantadas:</p>
+
+<input type="number" id="arvores">
+
+<button onclick="calcularImpacto()">
+Calcular
+</button>
+
+<p id="resultado"></p>
+
+</section>
+
+<!-- Quiz -->
+
+<section class="quiz">
+
+<h2>Quiz</h2>
+
+<p>
+
+Qual prática ajuda na conservação do solo?
+
+</p>
+
+<button onclick="quiz(true)">
+Plantio Direto
+</button>
+
+<button onclick="quiz(false)">
+Queimadas
+</button>
+
+<p id="quizResultado"></p>
+
+</section>
+
+<!-- Contato -->
+
+<section id="contato" class="contato">
+
+<h2>Contato</h2>
+
+<form>
+
+<input type="text"
+placeholder="Nome"
+required>
+
+<input type="email"
+placeholder="Email"
+required>
+
+<textarea
+placeholder="Mensagem">
+</textarea>
+
+<button type="submit">
+Enviar
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 AgroFuture - Agricultura Sustentável
+
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
