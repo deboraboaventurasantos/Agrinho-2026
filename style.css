@@ -77,7 +77,7 @@ header{
 
 .banner{
     height:100vh;
-    background:url("img/banner.jpg") center/cover no-repeat;
+    background:#2e7d32;
     display:flex;
     justify-content:center;
     align-items:center;
