@@ -227,41 +227,10 @@ botaoTopo.addEventListener("click", () => {
 
     });
 
-
-    //a//
-
-    const imagens = [
-
-{
-    arquivo: "assets/agrinho1.png",
-    titulo: "Agrinho - Imagem 1",
-    descricao: "Imagem criada por Inteligência Artificial representando a conexão entre o campo e a cidade."
-},
-
-{
-    arquivo: "assets/agrinho2.png",
-    titulo: "Agrinho - Imagem 2",
-    descricao: "Imagem criada por Inteligência Artificial destacando sustentabilidade, agricultura e inovação."
-}
-
-];
-
-const galeria = document.getElementById("galeria");
-
-imagens.forEach(item => {
-
-    const card = document.createElement("div");
-
-    card.className = "card";
-
-    card.innerHTML = `
-        <img src="${item.arquivo}" alt="${item.titulo}">
-        <h2>${item.titulo}</h2>
-        <p>${item.descricao}</p>
-    `;
-
-    galeria.appendChild(card);
-
 });
 
-});
+
+
+
+
+
