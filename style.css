@@ -354,70 +354,31 @@ footer{
     .menu li{
         margin:15px 0;
     }
-
-   //a//
-
-   *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#eef7e8;
-    color:#333;
-}
+/* ===== GALERIA DE IMAGENS ===== */
 
-header{
-    background:#2e7d32;
-    color:white;
-    padding:30px;
+.galeria{
+    background:#f4f4f4;
     text-align:center;
 }
 
-main{
-    padding:40px;
+.galeria-imagens{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
 }
 
-#galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
+.galeria-imagens img{
+    width:420px;
+    max-width:100%;
     border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:0.3s;
 }
 
-.card:hover{
-    transform:scale(1.03);
-}
-
-.card img{
-    width:100%;
-    height:320px;
-    object-fit:cover;
-}
-
-.card h2{
-    padding:15px;
-    color:#2e7d32;
-}
-
-.card p{
-    padding:0 15px 20px;
-    line-height:1.5;
-}
-
-footer{
-    background:#2e7d32;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+.galeria-imagens img:hover{
+    transform:scale(1.05);
 }
