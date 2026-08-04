@@ -1,7 +1,103 @@
 // ==========================
 // MENU RESPONSIVO
 // ==========================
+....................
+document.querySelectorAll(".menu a").forEach(link => {
 
+    link.addEventListener("click", () => {
+
+        menu.classList.remove("active");
+
+    });
+
+});
+..................
+const progresso=document.getElementById("progresso");
+
+if(progresso){
+
+let largura=0;
+
+const intervalo=setInterval(()=>{
+
+largura++;
+
+progresso.style.width=largura+"%";
+
+if(largura>=85){
+
+clearInterval(intervalo);
+
+}
+
+},40);
+
+}
+
+const contador=document.getElementById("contador");
+
+if(contador){
+
+let numero=0;
+
+const alvo=1000000;
+
+const tempo=setInterval(()=>{
+
+numero+=5000;
+
+contador.innerHTML=
+
+numero.toLocaleString("pt-BR")+
+
+" árvores preservadas";
+
+if(numero>=alvo){
+
+clearInterval(tempo);
+
+}
+
+},15);
+
+}
+
+const texto="Agricultura Sustentável";
+
+const titulo=document.getElementById("titulo");
+
+if(titulo){
+
+titulo.innerHTML="";
+
+let i=0;
+
+function escrever(){
+
+if(i<texto.length){
+
+titulo.innerHTML+=texto.charAt(i);
+
+i++;
+
+setTimeout(escrever,90);
+
+}
+
+}
+
+escrever();
+
+}
+
+
+const ano=document.getElementById("ano");
+
+if(ano){
+
+ano.innerHTML="© "+new Date().getFullYear()+" AgroFuture";
+
+}
 const menuBtn = document.getElementById("menu-btn");
 const menu = document.querySelector(".menu");
 
@@ -150,7 +246,27 @@ formulario.addEventListener("submit", function(e){
 
     e.preventDefault();
 
-    alert("Mensagem enviada com sucesso! Obrigado pelo contato.");
+    formulario.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const botao=formulario.querySelector("button");
+
+botao.innerHTML="✔ Mensagem enviada!";
+
+botao.style.background="#43a047";
+
+setTimeout(()=>{
+
+botao.innerHTML="Enviar";
+
+botao.style.background="#2e7d32";
+
+},3000);
+
+formulario.reset();
+
+});
 
     formulario.reset();
 
@@ -160,24 +276,21 @@ formulario.addEventListener("submit", function(e){
 // ANIMAÇÃO DOS CARDS
 // ==========================
 
-const cards = document.querySelectorAll(".card");
+const observer = new IntersectionObserver((entries)=>{
 
-cards.forEach((card) => {
+    entries.forEach(entry=>{
 
-    card.addEventListener("mouseenter", () => {
+        if(entry.isIntersecting){
 
-        card.style.transform = "translateY(-10px) scale(1.03)";
+            entry.target.classList.add("mostrar");
 
-    });
-
-    card.addEventListener("mouseleave", () => {
-
-        card.style.transform = "translateY(0) scale(1)";
+        }
 
     });
 
-});
+},{threshold:0.2});
 
+cards.forEach(card=>observer.observe(card));
 // ==========================
 // BOTÃO "VOLTAR AO TOPO"
 // ==========================
@@ -228,6 +341,59 @@ botaoTopo.addEventListener("click", () => {
     });
 
 });
+
+...............................
+
+const drone = document.getElementById("statusDrone");
+
+if(drone){
+
+let porcentagem=0;
+
+setInterval(()=>{
+
+porcentagem++;
+
+if(porcentagem>100) porcentagem=0;
+
+drone.innerHTML=
+"🚁 Monitoramento da lavoura: "+porcentagem+"%";
+
+},100);
+
+}
+
+
+    const ia=document.getElementById("ia");
+
+if(ia){
+
+const mensagens=[
+
+"🌱 IA detectou solo saudável",
+
+"💧 Umidade ideal",
+
+"🚜 Produtividade elevada",
+
+"🌾 Nenhuma praga encontrada",
+
+"🛰️ Satélite analisando lavoura"
+
+];
+
+setInterval(()=>{
+
+const indice=Math.floor(Math.random()*mensagens.length);
+
+ia.innerHTML=mensagens[indice];
+
+},2500);
+
+}
+
+    
+...........................................
 
 
 
